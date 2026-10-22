@@ -1,0 +1,17 @@
+apiVersion: cuttlefish.dev/v1alpha1
+kind: Workflow
+metadata:
+  name: mcp-review-success
+  description: Synthetic public-review fixture; prints a constant success message.
+spec:
+  nodes:
+    - id: sample-check
+      image: alpine:3.20
+      run:
+        shell: sh-e
+        timeout: 1m
+      script: |
+        printf 'MCP review fixture: sample validation passed.\n'
+        printf 'Dataset: synthetic sample only.\n'
+  triggers:
+    - kind: manual

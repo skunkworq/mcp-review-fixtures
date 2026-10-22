@@ -1,0 +1,8 @@
+.env*
+*credentials*
+*secrets*
+recording-frames/
+*.mp4
+*.webm
+*.png
+*.jpg
