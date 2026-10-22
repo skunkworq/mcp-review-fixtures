@@ -4,6 +4,7 @@ metadata:
   name: mcp-review-intentional-failure
   description: Synthetic public-review fixture; deliberately exits 13 for failure inspection.
 spec:
+  edges: []
   nodes:
     - id: expected-failure
       image: alpine:3.20

@@ -4,6 +4,7 @@ metadata:
   name: mcp-review-success
   description: Synthetic public-review fixture; prints a constant success message.
 spec:
+  edges: []
   nodes:
     - id: sample-check
       image: alpine:3.20
